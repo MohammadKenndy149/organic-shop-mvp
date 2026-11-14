@@ -17,16 +17,19 @@
         header {
             background: linear-gradient(135deg, #234e52, #2c7a7b);
             color: white;
-            padding: 40px 20px;
+            padding: 40px 20px 55px;
             text-align: center;
         }
-        .badge {
-            background-color: rgba(255, 255, 255, 0.2);
-            padding: 6px 16px;
+        .author-badge {
+            background-color: #f6e05e;
+            color: #1a202c;
+            font-weight: bold;
+            padding: 6px 18px;
             border-radius: 20px;
-            font-size: 12px;
+            font-size: 14px;
             display: inline-block;
             margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
         header h1 {
             margin: 10px 0;
@@ -40,7 +43,7 @@
         }
         .container {
             max-width: 900px;
-            margin: -25px auto 40px;
+            margin: -30px auto 40px;
             padding: 0 15px;
         }
         .value-box {
@@ -138,29 +141,27 @@
             color: white;
             text-align: center;
             padding: 20px;
-            font-size: 13px;
+            font-size: 14px;
         }
         footer strong {
-            color: #81e6d9;
+            color: #f6e05e;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <span class="badge">پروژه پودمان اول: ایجاد کاروکسب الکترونیکی (نسخه MVP)</span>
+        <div class="author-badge">طراح و مجری پروژه: محمدرضا حبیب‌نژاد (پایه دوازدهم شبکه و نرم‌افزار)</div>
         <h1>فروشگاه خشکبار ارگانیک و صنایع دستی روستا</h1>
-        <p>عرضه مستقیم و بدون واسطه محصولات سالم روستایی و دست‌بافت‌های سنتی به سراسر کشور</p>
+        <p>پروژه پودمان اول: ایجاد کاروکسب الکترونیکی (نسخه کمینه محصول پذیرفتنی - MVP)</p>
     </header>
 
     <div class="container">
-        <!-- بخش ارزش پیشنهادی -->
         <div class="value-box">
             <h2>✨ ارزش پیشنهادی و مزیت رقابتی ما</h2>
-            <p>تضمین تازگی و ارگانیک بودن مواد اولیه (بدون مواد نگهدارنده) + بسته‌بندی خلاقانه در بقچه‌های سوزن‌دوزی سنتی + ارسال سریع پستی</p>
+            <p>تضمین تازگی و ارگانیک بودن مواد اولیه (بدون مواد نگهدارنده) + بسته‌بندی خلاقانه در بقچه‌های سوزن‌دوزی سنتی + ارسال مستقیم به سراسر کشور</p>
         </div>
 
-        <!-- بخش محصولات نمونه برای تست بازار (MVP) -->
         <div class="products-grid">
             <div class="product-card">
                 <div class="icon">🥜</div>
@@ -169,3 +170,24 @@
                 <span class="price">۲۸۰,۰۰۰ تومان</span>
                 <button class="btn" onclick="orderProduct('بسته آجیل سفری ۵۰۰ گرمی')">ثبت سفارش آزمایشی</button>
             </div>
+
+            <div class="product-card">
+                <div class="icon">🍑</div>
+                <h3>میوه خشک مخلوط ارگانیک</h3>
+                <p>تهیه شده از میوه‌های دست‌چین باغ به روش خشک‌کردن طبیعی و بهداشتی</p>
+                <span class="price">۱۹۵,۰۰۰ تومان</span>
+                <button class="btn" onclick="orderProduct('میوه خشک مخلوط ارگانیک')">ثبت سفارش آزمایشی</button>
+            </div>
+
+            <div class="product-card">
+                <div class="icon">🧵</div>
+                <h3>بقچه سوزن‌دوزی سنتی</h3>
+                <p>هنر دست بانوان روستا با پارچه کتان و رنگ‌های ثابت گیاهی</p>
+                <span class="price">۳۵۰,۰۰۰ تومان</span>
+                <button class="btn" onclick="orderProduct('بقچه سوزن‌دوزی سنتی')">ثبت سفارش آزمایشی</button>
+            </div>
+        </div>
+
+        <div class="feedback-section">
+            <h2>📝 فرم نظرسنجی و سنجش تقاضای مشتریان (تست MVP)</h2>
+            <p style="font-size: 13px; color: #718096;">نظر شما به ما کمک می‌کند تا قبل از
